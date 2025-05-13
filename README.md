@@ -26,7 +26,7 @@
 
 ### VScode Extension安裝
 
-![image-1](./src/assets/pic-1.png)
+![image-1](./src/assets/images/pic-1.png)
 
 請在`EXTENSIONS`內搜尋`@recommended`(如上圖)，會看到推薦安裝的Extensions，請全部安裝下來。
 
