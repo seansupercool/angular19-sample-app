@@ -1,65 +1,71 @@
-# Angular19-sample-app
+# angular19-sample-app
+## 一、專案說明
 
-本專案是使用 [Angular CLI](https://github.com/angular/angular-cli) 版本 19.2.11 建立。
+本專案是使用 [Angular CLI](https://github.com/angular/angular-cli) 版本 19.2.11 建立
+ 搭配`Google`的[gts](https://github.com/google/gts)，對專案的程式碼和排版進行統一的規範和檢核。
 
-## 開發伺服器
+[![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 
-啟動本地開發伺服器：
+### 特點
+
+1. `Angular19`版本並使用`Standalone`架構
+2. 使用程式碼、提交訊息檢核和排版工具(`ESLint、Commitizen、Prettier`)
+3. 使用 [Google Code Style](https://github.com/google/gts)
+4. 搭配使用`VScode Extension`在檔案儲存時自動排版和Lint
+5. Commit時會進行程式語法檢核強制排版以確保每次提交都有一致性。
+
+## 二、專案環境和套件
+
+### 環境設置
+
+| 檔案                                         | 版本                 |
+| -------------------------------------------- | -------------------- |
+| [Node.js](https://nodejs.org/zh-tw/download) | ^20.19.0 |
+| [git](https://git-scm.com/downloads)         | 不限                 |
+| [Angular cli](https://angular.io/cli)        | 19版                 |
+
+### VScode Extension安裝
+
+![image-1](./src/assets/pic-1.png)
+
+請在`EXTENSIONS`內搜尋`@recommended`(如上圖)，會看到推薦安裝的Extensions，請全部安裝下來。
+
+## 三、專案啟動
+
+輸入以下指令，進行套件安裝
+
+```bash
+npm install
+```
+
+待安裝完套件後輸入以下指令來啟動專案
 
 ```bash
 ng serve
 ```
 
-伺服器啟動後，開啟瀏覽器至 `http://localhost:4200/`。當你修改任何原始碼檔案時，應用程式會自動重新載入。
+## 四、專案Commit
 
-## 程式碼腳手架
-
-Angular CLI 提供強大的腳手架工具。建立新元件：
+請輸入以下指令，以便呼叫出Commitizen工具協助進行Commit訊息的撰寫
 
 ```bash
-ng generate component component-name
+npm run commit
 ```
 
-查看所有可用的腳手架類型（例如：`components`、`directives`、`pipes`）：
+## 五、指令
 
-```bash
-ng generate --help
-```
+- `ng serve` - 啟動開發服務器。
+- `ng build` - 產生打包。
+- `npm test` - 運行單元測試。
+- `npm run lint` - 執行程式碼檢查。
+- `npm run commit`- 使用 Commitizen 提交變更。
 
-## 專案建置
+## 六、專案資料夾結構
 
-建置專案：
+表示當前專案沒有該檔案，在此列出是為了顯示結構，可以依照需求自行新增。
+```text
 
-```bash
-ng build
-```
-
-編譯後的成果會放置於 `dist/` 目錄，預設會使用最佳化方式為正式環境進行編譯。
-
-## 單元測試
-
-使用 [Karma](https://karma-runner.github.io) 執行單元測試：
-
-```bash
-ng test
-```
-
-## 端對端測試
-
-執行端對端（e2e）測試：
-
-```bash
-ng e2e
-```
-
-Angular CLI 預設不包含 e2e 測試框架，你可以根據需求自行選擇。
-
-## 專案目錄結構說明
-
-以下為推薦的 Angular 專案架構：
-
-```
-- 📂 my-angular-app
+- 📂 angular19-sample-app
   - 📂 e2e
   - 📂 node_modules
   - 📂 src
@@ -107,3 +113,11 @@ Angular CLI 預設不包含 e2e 測試框架，你可以根據需求自行選擇
 ```
 
 建議開發者依照此結構進行模組與元件規劃，可提升專案可維護性與協作效率。
+
+## 七、參考連結
+
+- [Google-gts](https://github.com/google/gts)
+- [Commitizen](https://github.com/commitizen/cz-cli)
+- [Commitlint](https://github.com/conventional-changelog/commitlint)
+- [lint-staged](https://github.com/lint-staged/lint-staged)
+- [husky](https://typicode.github.io/husky/)
